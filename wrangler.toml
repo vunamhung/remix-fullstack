@@ -1,5 +1,6 @@
 name = "remix-fullstack" #todo need real data
 compatibility_date = "2022-06-01"
+compatibility_flags = ["streams_enable_constructors"]
 main = "./build/index.js"
 
 account_id = "93e39c248caa03a01ab11bc4d73875cf" #todo need real data
