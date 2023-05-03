@@ -3,7 +3,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "remix build",
-    "deploy": "wrangler publish",
+    "deploy": "wrangler publish -e production",
     "dev:remix": "remix watch",
     "dev:miniflare": "cross-env NODE_ENV=development miniflare ./build/index.js --watch",
     "dev": "npm-run-all build --parallel \"dev:*\"",

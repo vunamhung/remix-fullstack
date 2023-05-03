@@ -1,9 +1,16 @@
-name = "remix-fullstack"
+name = "remix-fullstack" #todo need real data
+compatibility_date = "2022-06-01"
+main = "./build/index.js"
+
+account_id = "93e39c248caa03a01ab11bc4d73875cf" #todo need real data
 
 workers_dev = true
-main = "./build/index.js"
-compatibility_date = "2022-04-05" # https://developers.cloudflare.com/workers/platform/compatibility-dates
-compatibility_flags = ["streams_enable_constructors"]
+
+[env.production]
+  routes = [
+    { pattern = "remix-fullstack.hungvu.work", custom_domain = true }
+  ]
+  workers_dev = false
 
 [site]
   bucket = "./public"
