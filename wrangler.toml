@@ -1,0 +1,13 @@
+name = "remix-fullstack"
+
+workers_dev = true
+main = "./build/index.js"
+compatibility_date = "2022-04-05" # https://developers.cloudflare.com/workers/platform/compatibility-dates
+compatibility_flags = ["streams_enable_constructors"]
+
+[site]
+  bucket = "./public"
+
+[build]
+  command = "npm run build"
+
