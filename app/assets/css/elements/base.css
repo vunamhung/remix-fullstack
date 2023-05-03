@@ -1,0 +1,9 @@
+html {
+  @apply antialiased;
+}
+.grid {
+  @apply grid-cols-1;
+  > * {
+    @apply min-w-0;
+  }
+}

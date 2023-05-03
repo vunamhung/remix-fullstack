@@ -1,0 +1,8 @@
+{
+  "root": true,
+  "extends": ["@remix-run/eslint-config", "plugin:jsx-a11y/recommended"],
+  "plugins": ["jsx-a11y"],
+  "rules": {
+    "react-hooks/exhaustive-deps": 0
+  }
+}

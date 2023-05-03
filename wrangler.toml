@@ -7,9 +7,14 @@ account_id = "93e39c248caa03a01ab11bc4d73875cf" #todo need real data
 
 workers_dev = true
 
+[[ d1_databases ]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "remix" #todo need real data
+database_id = "cd210049-6e57-4739-bd6a-5f4a8d04cf5f" #todo need real data
+
 [env.production]
   routes = [
-    { pattern = "remix-fullstack.hungvu.work", custom_domain = true }
+    { pattern = "remix-fullstack.hungvu.work", custom_domain = true } #todo need real data
   ]
   workers_dev = false
 
