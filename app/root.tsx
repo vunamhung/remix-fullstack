@@ -1,8 +1,8 @@
 import type { LinksFunction } from '@remix-run/cloudflare';
 import { cssBundleHref } from '@remix-run/css-bundle';
-import { isRouteErrorResponse, Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration, useRouteError } from '@remix-run/react';
-import { Toaster } from 'react-hot-toast';
+import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration, isRouteErrorResponse, useRouteError } from '@remix-run/react';
 import { Document } from '~/components';
+import { Toaster } from 'react-hot-toast';
 
 export const links: LinksFunction = () => [
   { rel: 'stylesheet', href: require('./assets/css/style.css') },
