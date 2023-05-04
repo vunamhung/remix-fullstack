@@ -6,7 +6,7 @@ export const meta: V2_MetaFunction = () => {
 };
 
 export const loader: LoaderFunction = async ({ context }) => {
-  const db = getDbFromContext(context);
+  // const db = getDbFromContext(context);
 
   return {};
 };
